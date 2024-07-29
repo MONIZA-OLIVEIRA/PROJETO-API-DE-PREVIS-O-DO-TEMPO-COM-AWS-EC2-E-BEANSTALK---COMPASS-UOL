@@ -2,15 +2,15 @@ const axios = require('axios');
 
 
 const descricaoEmPortugues = {
-  "clear sky": "céu limpo",
-  "few clouds": "poucas nuvens",
-  "scattered clouds": "nuvens dispersas",
-  "broken clouds": "nuvens quebradas",
-  "shower rain": "chuva de banho",
-  "rain": "chuva",
-  "thunderstorm": "tempestade",
-  "snow": "neve",
-  "mist": "névoa"
+  "clear sky": "Céu limpo",
+  "few clouds": "Poucas nuvens",
+  "scattered clouds": "Nuvens dispersas",
+  "broken clouds": "Nuvens quebradas",
+  "shower rain": "Chuva de banho",
+  "rain": "Chuva",
+  "thunderstorm": "Tempestade",
+  "snow": "Neve",
+  "mist": "Névoa"
 };
 
 async function getPrevisao(cidade, bairro) {
@@ -20,8 +20,9 @@ async function getPrevisao(cidade, bairro) {
 
     const response = await axios.get(apiUrl);
     const previsao = response.data;
-
-    const previsoesFiltradas = previsao.list.slice(0, 9); // Exemplo: pegando as primeiras 9 previsões
+    
+    // Filtra apenas as previsões do dia
+    const previsoesFiltradas = previsao.list.slice(0, 2); // Exemplo: pegando as primeiras 9 previsões
 
     // Traduz as descrições do tempo para português
     previsoesFiltradas.forEach(previsao => {
