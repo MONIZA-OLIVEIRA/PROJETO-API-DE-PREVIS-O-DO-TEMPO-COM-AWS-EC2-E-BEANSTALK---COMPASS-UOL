@@ -1,48 +1,107 @@
-# Grupo4
+# Clima Cast
 
-Projeto Consulta Clima
-Este projeto é uma aplicação web simples que permite consultar a previsão do tempo para qualquer cidade usando a API da Weatherstack.
+Uma aplicação que consome uma API de previsão do tempo utilizando Node.js, Express, Axios e Docker.
 
+## Estrutura do Projeto
 
-Pré-requisitos
-Node.js instalado na máquina
-Uma conta na Weatherstack para obter uma API key
-Passos para Configuração
-Clone o repositório:
+src/
+│
+├── Dockerfile
+├── package.json
+├── server.js
+│ ├── routes/
+│ │ └── previsao.js
+│ ├── views/
+│ │ └── index.hbs
+│ ├── public/
+│ │ ├── css/
+│ │ │ └── style.css
+│ │ ├── js/
+│ │ │ └── modal.js
+│ │ └── assets/
+│ │ └── clima.png
+└── README.md
 
+## Pré-requisitos
 
-Copiar código
-git clone <URL-do-repositorio>
-cd projeto-consulta-clima
-Instale as dependências:
+- Docker
+- Node.js (opcional, se quiser rodar localmente sem Docker)
 
-Copiar código
-npm install
-Obtenha uma API key da Weatherstack:
+## Instalação e Uso
 
-Acesse Weatherstack e crie uma conta.
-Gere uma chave de acesso (access key).
-Configure a chave de acesso:
+### Com Docker
 
-Abra o arquivo server.js na raiz do projeto.
-Substitua 'YOUR_ACCESS_KEY' pela sua chave de acesso da Weatherstack.
-Inicie o servidor:
+1. Construa a imagem Docker:
 
-Copiar código
-npm start
-Acesse a aplicação no navegador:
+    ```bash
+    docker build -t ClimaCast .
+    ```
 
-Abra um navegador e vá para http://localhost:3000/.
-Funcionalidades
-Entrada de Cidade: Digite o nome da cidade que deseja consultar.
-Consulta de Clima: Clique no botão para buscar a previsão do tempo.
-Modal de Resultados: Os dados da previsão do tempo são exibidos em um modal.
-Validação de Entradas: O campo de entrada é verificado para garantir que não está vazio.
-Tecnologias Utilizadas
-Node.js
-Express
-Axios
-HTML, CSS, JavaScript
-Validação de Entradas
-Campo de Cidade: Antes de enviar a requisição, o campo de entrada é verificado para garantir que não está vazio.
-Tratamento de Erros da API: Mensagens de erro detalhadas são exibidas se ocorrer algum problema ao buscar os dados da API.
+2. Rode o container:
+
+    ```bash
+    docker run -p 3000:3000 ClimaCast
+    ```
+
+3. Acesse a aplicação em seu navegador:
+
+    [http://localhost:3000](http://localhost:3000)
+
+### API de Previsão do Tempo
+
+Este projeto utiliza a API do OpenWeatherMap para obter dados de previsão do tempo. Para configurar a API, substitua a variável `apiKey` em `src/routes/previsao.js` com a sua chave da API.
+
+## Criando uma Instância EC2 e Implantando o Contêiner Docker
+
+### Passo 1: Criar uma Instância EC2
+
+1. Acesse o console da AWS e vá para a seção EC2.
+2. Clique em "Launch Instance".
+3. Escolha uma AMI (Amazon Machine Image). Para este exemplo, use a "Amazon Linux 2 AMI (HVM), SSD Volume Type".
+4. Escolha o tipo de instância. Uma `t2.micro` é suficiente para este exemplo.
+5. Configure as configurações de instância conforme necessário.
+6. Adicione o armazenamento (o padrão é suficiente).
+7. Adicione tags (opcional).
+8. Configure o grupo de segurança:
+   - Adicione uma regra para permitir o tráfego HTTP na porta 80.
+   - Adicione uma regra para permitir o tráfego SSH na porta 22 (para acesso ao servidor).
+9. Revise e lance a instância.
+10. Crie um novo par de chaves ou use um existente para acessar a instância via SSH.
+
+### Passo 2: Conectar-se à Instância EC2
+
+1. Faça o download do arquivo `.pem` do par de chaves.
+2. Conecte-se à sua instância via SSH:
+
+    ```bash
+    ssh -i "seupar.de.chave.pem" ec2-user@seu-endereco-ec2.amazonaws.com
+    ```
+
+### Passo 3: Instalar o Docker na Instância EC2
+
+Execute os seguintes comandos para instalar o Docker:
+
+```bash
+sudo yum update -y
+sudo amazon-linux-extras install docker
+sudo service docker start
+sudo usermod -a -G docker ec2-user
+
+Passo 4: Fazer Login no Docker Hub (Opcional)
+Se você criou a imagem Docker localmente e a enviou para o Docker Hub, faça login:
+
+docker login
+
+Passo 5: Baixar e Executar o Contêiner Docker na Instância EC2
+Puxe a imagem Docker do Docker Hub (substitua seu-usuario e ClimaCast pelo nome do seu repositório e imagem):
+
+docker pull seu-usuario/ClimaCast
+
+Rode o contêiner Docker:
+
+docker run -d -p 80:3000 seu-usuario/ClimaCast
+
+Passo 6: Acessar a Aplicação
+Acesse a aplicação em seu navegador usando o endereço público da sua instância EC2:
+
+http://seu-endereco-ec2.amazonaws.com
