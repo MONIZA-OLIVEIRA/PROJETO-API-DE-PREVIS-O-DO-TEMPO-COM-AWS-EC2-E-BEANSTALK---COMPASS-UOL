@@ -1,4 +1,4 @@
-
+btn_pesquisar = document.getElementById('btn-pesquisar')
 
 function abrirModal(){
     const janelaModal = document.getElementById('janela-modal')
@@ -16,3 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
    
     abrirModal();
 });
+
+/*função scroll para rolagem do modal*/
+btn_pesquisar.addEventListener('click', () =>{
+    window.scroll({top:window.innerHeight, behavior:"smooth"})
+})

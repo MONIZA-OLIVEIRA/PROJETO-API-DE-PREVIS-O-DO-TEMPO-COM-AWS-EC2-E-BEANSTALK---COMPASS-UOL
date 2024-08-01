@@ -16,7 +16,20 @@ body{
 
 .interface{
     max-width: 1280px;
-    margin-top: 15% auto;
+    margin-top: 10% auto;
+    text-align: center;
+
+}
+
+.interface p
+{
+    text-align: justify;
+}
+
+main
+{
+    bottom: 0;
+    top: 50px;
 }
 
 .flex {
@@ -25,10 +38,12 @@ body{
 
 /* estilo cabeçalho*/
 
+
+
 h2.titulo{
     color:#fff;
     font-size: 38px;
-    text-align: center;
+    text-align:center;
 }
 
 h2.titulo span{
@@ -76,6 +91,9 @@ header nav ul li{
     padding: 0 40px;
 }
 
+/* logo*/
+
+
 .btn-contato button{
     padding: 10px 40px;
     font-size: 18px;
@@ -122,6 +140,7 @@ section.topo-do-site .flex{
     position:center;
     margin-left: auto;
     margin-right: auto;
+
    
 }
 
@@ -176,8 +195,8 @@ section.previsao-container .flex{
 {
     width: 100vw;
     height: 100vh;
-    position: relative;
-    padding-top: 10px ;
+    position:relative;
+    padding-top: 50px ;
     top: 0%;
     left: 0%;
     background-color: rgba(12, 12, 21, 0.816);
@@ -256,10 +275,7 @@ section.previsao-container .flex{
     animation: abrirmodal 0.2s;
 }
 
-/*.topo-do-site{
-    position: relative;
-    animation: flutuar 2s ease-in-out infinite alternate;
-}*/
+
 
 @keyframes flutuar{
     0%{
@@ -271,5 +287,29 @@ section.previsao-container .flex{
     }
 }
 
-/*estilo das especialidades */
+@media screen and (max-width: 1020px)
+{
+    .flex{
+        flex-direction:column-reverse
+    }
+
+    .btn-contato{
+        display: none;
+    }
+
+    section.topo-do-site{
+        padding: 20px 8%;
+    }
+    .topo-do-site h1{
+        font-size: 30px;
+    }
+
+    .txt-topo-site p {
+        text-align:inherit;
+        line-height: 35px;
+    }    
+
+
+}
+
 
