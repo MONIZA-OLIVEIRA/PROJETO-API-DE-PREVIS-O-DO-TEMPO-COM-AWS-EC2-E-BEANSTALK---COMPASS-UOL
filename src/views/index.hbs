@@ -14,13 +14,13 @@
     <title>Wheather COMPASS</title>
 </head>
 <body>
-    <header>
+   <!-- <header>
         <div class="interface">
             <div class="logo">
                 <a href="#">
                     <img src="/assets/clima.png" alt="logo do projeto">
                 </a>
-            </div><!--logo-->
+            </div>
 
             <nav class="menu-desktop">
                 <ul>
@@ -32,50 +32,23 @@
            
 
        
+    </header>-->
+     <header class="header">
+          <div class="logo">
+                <a href="#">
+                    <img src="/assets/clima.png" alt="logo do projeto">
+                </a>
+            </div>
+
+        <nav class="navbar">
+            <a href="#" onclick="abrirModal()">Previsão do tempo</a>
+        </nav>
+
     </header>
-
-    <main> 
-        <section class="topo-do-site">
-            <div class="interface">
-               <div class="flex">
-                   <div class="txt-topo-site">
-                        <h1>A importância da previsão do tempo<span>.</span></h1>
-                        <p>A previsão do tempo é fundamental porque influencia diretamente diversas atividades humanas e decisões diárias. 
-                        Saber com antecedência como estará o clima permite que pessoas e empresas se preparem adequadamente, seja para planejar viagens, escolher roupas adequadas, realizar cultivos agrícolas,
-                        ou até mesmo para se proteger de eventos climáticos severos. Além disso, a previsão meteorológica auxilia na gestão de recursos naturais e na mitigação de desastres,
-                        fornecendo informações cruciais para a segurança pública e o bem-estar coletivo.</p>
-
-                       
-                          
-                        
-                   </div> <!--toposite-->
-
-                   
-               </div><!--flex-->
-            </div><!--fiminterface-->
-        </section><!--fim topo do site-->
-
-        <section class="previsao-container">
-            <div class="interface">
-                <h2 class="titulo"> Veja a previsão <span>Em qualquer lugar!.</span></h2>
-                <div class="flex">
-                    <div class="previsao-box"  onclick="abrirModal()" >
-                        <i class="bi bi-file-earmark-richtext"></i>
-                        <h3>Previsão do tempo</h3>
-                        <div id="btn-pesquisar" onclick="abrirModal()">Clique aqui para pesquisar</div>
-                    </div></br>
-
-                    
-                    
-                    
-
-                </div><!--flex-->
-            </div><!--interface-->    
-        </section><!--especialidades -->
-    </main>
+     
 
     <!--<div class="btn" onclick="abrirModal()">Pesquisar</div>-->
-    
+     </div>
     <div class="janela-modal" id="janela-modal">
         <div class="modal" id="modal">
             <button class="fechar" id="fechar">X</button>
@@ -126,6 +99,16 @@
         </div>
 </div>
 
+<div class="previsao-container">
+            <div class="interface">
+                <h2 class="titulo"> Veja a previsão <span>Em qualquer lugar!.</span></h2>
+                <div class="flex">
+                    <div class="previsao-box"  onclick="btn_pesquisar()" >
+                        <i class="bi bi-file-earmark-richtext"></i>
+                        <h3>Previsão do tempo</h3>
+                        <div id="btn-pesquisar" onclick="abrirModal()">Clique aqui para pesquisar</div>
+                    </div></br>
+    </div>
 
     
 <script src="/js/modal.js"></script>

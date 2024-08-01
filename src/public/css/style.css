@@ -16,25 +16,15 @@ body{
 
 .interface{
     max-width: 1280px;
-    /*margin-top: 10% auto;*/
+    margin-top: 10% auto;
     text-align: center;
 
 }
 
-.interface p
-{
-    text-align: justify;
-}
 
-main
-{
-    bottom: 0;
-    top: 50px;
-   
-}
 
 .flex {
-    display: flex;
+    display: center;
 }
 
 /* estilo cabeçalho*/
@@ -140,7 +130,7 @@ header nav ul li{
 /* estilo do topo do site*/
 
 section.topo-do-site{
-    padding: 40px 4%;
+    padding: 20px 4%;
 }
 
 section.topo-do-site .flex{
@@ -172,21 +162,21 @@ section.topo-do-site .flex{
 /*estilo da previsão */
 
 section.previsao-container{
-    padding: 40px 4%;
+    padding: 0px 4%;
 }
 
 section.previsao-container .flex{
     display:flex;
     text-align: center;
     justify-content: center;
-    gap:60px;
+    
    
     
 } 
 
 .previsao-container .previsao-box{
     color: #fff;
-    padding:  40px;
+    
     border-radius: 20px;
     margin-top: 45px;
     transition: .2s;
@@ -238,7 +228,7 @@ section.previsao-container .flex{
     margin:50px auto;*/
     min-width: 450px;
     min-height: 200px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.382);
     backdrop-filter: blur(10px);
     padding: 50px;
     border-radius: 20px;
@@ -250,7 +240,7 @@ section.previsao-container .flex{
 {
     padding: 15px 25px;
     display: inline;
-    background-color: rgba(121, 117, 117, 0.733);
+    background-color: rgba(121, 117, 117, 0.229);
     border-radius: 20px;
     color: white;
     font-size: 15px;

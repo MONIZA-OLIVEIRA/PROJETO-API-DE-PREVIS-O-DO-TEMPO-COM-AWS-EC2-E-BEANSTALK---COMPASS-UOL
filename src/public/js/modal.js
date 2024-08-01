@@ -18,6 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /*função scroll para rolagem do modal*/
-btn_pesquisar.addEventListener('click', () =>{
+/*btn_pesquisar.addEventListener('click', () =>{
     window.scroll({top:window.innerHeight, behavior:"smooth"})
-})
+})*/
