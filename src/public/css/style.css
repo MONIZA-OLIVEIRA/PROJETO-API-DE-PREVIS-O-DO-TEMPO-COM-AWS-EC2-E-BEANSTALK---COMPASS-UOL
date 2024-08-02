@@ -9,7 +9,7 @@
 }
 
 body{
-    background-image: url("/assets/images/FundoCeu.jpg");
+    background-image: url("/assets/bgSky.jpg");
     height:100vh ;
 
 }
@@ -41,47 +41,6 @@ h2.titulo span{
     color:#1d03c89b;
 }
 
-/*header{
-    padding: 40px 4%;
-    background-color:rgba(0, 0, 0, 0.55);
-    width:100vw ;
-   
-
-}
-
-
-
-header a{
-    color:#979595;
-    text-decoration: none;
-    display: inline-block;
-    transition: .2s;
-}
-
-header a:hover{
-    color:#fff;
-    transform: scale(1.05);
-}
-
-header > .interface{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header nav{
-    list-style-type: none;  
-    
-}
-
-header nav ul{
-    list-style-type: none;
-}
-
-header nav ul li{
-    display: inline-block;
-    padding: 0 40px;
-}
 
 /* logo*/
 .header
@@ -224,8 +183,6 @@ section.previsao-container .flex{
 
 .modal 
 {
-    /*width: 300px;
-    margin:50px auto;*/
     min-width: 450px;
     min-height: 200px;
     background-color: rgba(255, 255, 255, 0.382);
