@@ -34,6 +34,7 @@ async function obterPrevisao(cidade, bairro) {
 
     return {
       cidade: previsao.city.name,
+      pais: previsao.city.country,
       previsoes: previsoesFiltradas
     };
   } catch (error) {
