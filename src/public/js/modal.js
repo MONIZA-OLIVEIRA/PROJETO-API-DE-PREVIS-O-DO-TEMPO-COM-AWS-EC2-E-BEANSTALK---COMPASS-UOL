@@ -1,4 +1,4 @@
-btn_pesquisar = document.getElementById('btn-pesquisar')
+botao_pesquisar = document.getElementById('botao-pesquisar')
 
 function abrirModal(){
     const janelaModal = document.getElementById('janela-modal')

@@ -28,7 +28,7 @@ app.get('/search', async (req, res) => {
        return res.status(400).send('Cidade ou bairro com erro de preenchimento. Por favor, preencha corretamente.');
      }
     // Chama a função para obter os dados da previsão do tempo
-    const previsao = await previsaoAPI.getPrevisao(cidade,bairro);
+    const previsao = await previsaoAPI.obterPrevisao(cidade,bairro);
 
     // Renderiza novamente o template index.hbs com os dados da cidade e da previsão do tempo
     res.render('index', { cidade, previsao, bairro });
