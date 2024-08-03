@@ -9,7 +9,7 @@
 }
 
 body{
-    background-image: url("/assets/bgSky.jpg");
+    background-image: url("/assets/images/FundoCeu.jpg");
     height:100vh ;
 
 }
@@ -193,23 +193,6 @@ section.previsao-container .flex{
 }
 
 
-.btn-modal
-{
-    padding: 15px 25px;
-    display: inline;
-    background-color: rgba(121, 117, 117, 0.229);
-    border-radius: 20px;
-    color: white;
-    font-size: 15px;
-    cursor: pointer;
-    transition: background-color 0,5s;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%,-50%);  
-    z-index: 1;
-}
-
 .fechar
 {
     position: absolute;
@@ -249,15 +232,7 @@ section.previsao-container .flex{
 
 
 
-@keyframes flutuar{
-    0%{
-        top:0;
 
-    }
-    100%{
-        top: 30px;
-    }
-}
 
 @media screen and (max-width: 1020px)
 {

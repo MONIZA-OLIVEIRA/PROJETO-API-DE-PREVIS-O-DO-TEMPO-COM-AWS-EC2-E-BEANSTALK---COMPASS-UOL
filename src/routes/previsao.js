@@ -13,7 +13,7 @@ const descricaoEmPortugues = {
   "mist": "Névoa"
 };
 
-async function getPrevisao(cidade, bairro) {
+async function obterPrevisao(cidade, bairro) {
   try {
     const apiKey = '5030f75610c84ab3325fd152ad7fd932'; // Substitua pela sua chave válida
     const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${cidade},${bairro}&appid=${apiKey}&units=metric`;
@@ -34,7 +34,9 @@ async function getPrevisao(cidade, bairro) {
 
     return {
       cidade: previsao.city.name,
+      pais: previsao.city.country,
       previsoes: previsoesFiltradas
+
     };
   } catch (error) {
     console.error('Erro ao obter os dados da API:', error.response?.data || error);
@@ -43,5 +45,5 @@ async function getPrevisao(cidade, bairro) {
 }
 
 module.exports = {
-  getPrevisao
+  obterPrevisao
 };
