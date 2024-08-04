@@ -1,6 +1,6 @@
 FROM node:latest
 
-WORKDIR /Grupo4 - bg final
+WORKDIR /app
 
 COPY package*.json .
 
