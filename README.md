@@ -333,8 +333,7 @@ ClimaCast pelo nome do seu repositório e imagem):
     Após clicar no *link* será exibida a tela da aplicação, ilustrada a seguir:<br><br>
     
 <div align="center">
-<img src="./src/public/assets/images/tela
-.png" align="justify"/>
+<img src="./src/public/assets/images/tela.png" align="justify"/>
 </div><br>  
 
 ## Utilização do Ambiente Beanstalk<a name="Beanstalk"></a>
@@ -410,8 +409,7 @@ ClimaCast pelo nome do seu repositório e imagem):
     Após clicar no *link* será exibida a tela da aplicação, ilustrada a seguir:<br><br>
     
 <div align="center">
-<img src="./src/public/assets/images/tela
-.png" align="justify"/>
+<img src="./src/public/assets/images/tela.png" align="justify"/>
 </div><br>  
 
 **OBSERVAÇÃO IMPORTANTE:** Devido ao Custo mais elevado da solução *Beanstalk*, ela se encontra **desabilitada** e ficará disponível em ocasião próxima ao *agendamento* da apresentação por parte do Grupo.
