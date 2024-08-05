@@ -44,7 +44,7 @@
 
 ## Projeto *CLIMA Cast*<a name="titulo"></a>
 
-Este projeto consiste no desenvolvimento e disponibilização de uma **Aplicação Web** que permite consultar a `Previsão do Tempo` para uma  `Cidade` e/ou `Bairro` utilizando uma chamada à  **API da Open Weather Map**.
+Este projeto consiste no desenvolvimento e disponibilização de uma **Aplicação Web** que permite consultar a `Previsão do Tempo` para uma  `Cidade` e `Bairro` utilizando uma chamada à  **API da Open Weather Map**.
 
 A previsão do tempo é **fundamental** porque influencia diretamente sobre diversas atividades humanas e na tomada de decisões.
 
@@ -52,7 +52,7 @@ Saber com antecedência como estará o clima permite que  as pessoas e as empres
 
 Além disso, a previsão meteorológica auxilia na gestão de recursos naturais e na mitigação de desastres, fornecendo informações cruciais para a segurança pública e o bem-estar coletivo.
 
-Este aplicativo foi estruturado na forma de um *Front-End*, que recebe as solicitações dos usuários; e um *Back-End* que consome a API de previsão do tempo da **, afim de obter as informações de previsões climáticas.
+Este aplicativo foi estruturado na forma de um *Front-End*, que recebe as solicitações dos usuários; e um *Back-End* que consome a API de previsão do tempo da *Open Weather Map*, afim de obter as informações de previsões climáticas.
 
 Este aplicativo foi desenvolvido utilizando as ferramentas  **Javascript-Node.js, Express, Axios e Docker**, sendo hospedado em um ambiente de **Nuvem AWS**.
 
@@ -168,18 +168,18 @@ O **Front-end** é a parte do aplicativo que está muito relacionado com a inter
 
 ## Sobre o Back-end<a name="back-end"></a>
 
-O **Back-end** é a estrutura que possibilita a operação do sistema, propriamente dita, recebendo as solicitações enviadas pelo **Font-end** e realiza as ações solicitadas por parte dos usuários.
+O **Back-end** é a estrutura que possibilita a operação do sistema, propriamente dita, recebendo as solicitações enviadas pelo **Front-end** e realiza as ações solicitadas por parte dos usuários.
 
-A função de um **Backend** está relacionada com servidores, bancos de dados, segurança, estrutura, gerenciamento de conteúdo e atualizações.
+A função de um **Back-end** está relacionada com servidores, bancos de dados, segurança, estrutura, gerenciamento de conteúdo e atualizações.
 
 Esse tipo de código se aplica para tratar os dados e também é responsável pelas inserções, arquivamentos e leituras de dados, por trás de uma aplicação.
 
-De forma resumida, são recursos que garantem a concretização dos processos em um ambiente eletrônico, como buscas em sites de compra ou até mesmo as ações mais complexas.
+De forma resumida, são recursos que garantem a concretização dos processos em um ambiente eletrônico, como buscas em um *site* de compras ou até mesmo ações mais complexas.
 
 ## Instalar as Dependências<a name="dependencias"></a>
 
 1. Executar os seguintes comandos:  
-    *npm install*
+    *npm install*  
     *npm start*
     
 2. Acesse a aplicação no navegador:  
@@ -189,7 +189,7 @@ De forma resumida, são recursos que garantem a concretização dos processos em
     **Informe o Nome da Cidade:** Digite o nome da **cidade**.  
     **Informe o Nome do Bairro:** Digite o nome do **bairro**. 
     
-    **OBSERVAÇÃO IMPORTANTE:** Os nomes da Cidade e do Bairro são obrigatórios para a Consulta, esta opção foi adotada para permitir maior precisão.
+    **OBSERVAÇÃO IMPORTANTE:** Os nomes da Cidade e do Bairro são **obrigatórios** para a Consulta. Esta opção foi adotada afim de permitir maior precisão na obtenção das informações.
 
     **Consulta do Clima:** Clique no **botão** para buscar a previsão do tempo.
     
@@ -205,7 +205,7 @@ De forma resumida, são recursos que garantem a concretização dos processos em
     *HTML, CSS e JavaScript*
 
 6. Tratamento de Erros da API:  
-    Mensagens de erro **detalhadas** são exibidas caso ocorra algum *tipo* de erro na consulta à **API**.
+    Mensagens de erro **detalhadas** serão exibidas caso ocorra algum *tipo* de erro na consulta à **API**.
 
 ## Sobre o Ambiente na Nuvem<a name="nuvem"></a>
 
@@ -446,7 +446,7 @@ A experiência da equipe foi muito boa e por isso temos muitos pontos a destacar
 
 * <img src="./src/public/assets/images/descomplicado.png" align="left" height="50px" />  Por fim, e não menos importante, a simplicidade sem perder a qualidade se tornou uma bandeira da equipe, em prol de uma solução eficiente, com custos controlados, factível de ser implementada, fácil para o usuário final e útil para todos.
 
-## Oportunidades de Melhorias)<a name="melhorias"></a>
+## Oportunidades de Melhoria)<a name="melhorias"></a>
 
 A equipe desenvolvedora acredita que oportunidades de melhorias sempre existirão, no entanto, no presente processo, ficou demonstrado que a equipe buscou formas de evoluir a solução, seja pelo aspecto da segurança, seja sob o aspecto da continuidade operacional. Toda e qualquer sugestão poderá ser encaminhada para os membros da equipe que desde já agradecem.
 
