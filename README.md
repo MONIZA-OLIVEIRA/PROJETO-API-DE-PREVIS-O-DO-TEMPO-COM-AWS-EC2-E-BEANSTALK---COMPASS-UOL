@@ -108,6 +108,7 @@ Nesta seção serão abordados aspectos referentes à disponibilização do Apli
         │       │   └── persistencia.png
         │       │   └── pessoas.png
         │       │   └── senso.png
+        │       │   └── tela.png
         │       │   └── TRELLO.png
         │       │   └── VPC_1.png
         │       │        
@@ -413,7 +414,7 @@ ClimaCast pelo nome do seu repositório e imagem):
 .png" align="justify"/>
 </div><br>  
 
-**ONSERVAÇÃO IMPORTANTE:** Devido ao Custo mais elevado da solução *Beanstalk*, ela se encontra **desabilitada** e ficará disponível em ocasião próxima ao *agendamento* da apresentação por parte do Grupo.
+**OBSERVAÇÃO IMPORTANTE:** Devido ao Custo mais elevado da solução *Beanstalk*, ela se encontra **desabilitada** e ficará disponível em ocasião próxima ao *agendamento* da apresentação por parte do Grupo.
 
 ## Dificuldades/Pontos Fracos<a name="fraquezas"></a>
 
@@ -428,7 +429,7 @@ A experiência da equipe foi muito boa e por isso temos muitos pontos a destacar
 * Primeiro com relação à organização dos trabalhos foi utilizada a ferramenta de *métodos ágeis* denominada **Trello**. Abaixo esta exibida uma imagem extraída do **Trello**;  
 
 <div align="center">
-<img src="./src/public/assets/images/trello.png" align="justify"/>
+<img src="./src/public/assets/images/TRELLO.png" align="justify"/>
 </div>
 
 * <img src="./src/public/assets/images/pessoas.png" align="left" height="50px" />  **Liderança Compartilhada** foi uma marca observada na equipe. Não houve a imposição de um `Líder`; conforme a situação exigia, ocorria o surgimento de uma liderança natural com habilidades para conduzir os trabalhos e superar as dificuldades que se apresentavam. Outro quesito crucial com relação às pessoas se trata do alto grau de **empatia** observado, não se relatando nenhuma desavença, discussão acalorada e discórdia no seio da equipe;
