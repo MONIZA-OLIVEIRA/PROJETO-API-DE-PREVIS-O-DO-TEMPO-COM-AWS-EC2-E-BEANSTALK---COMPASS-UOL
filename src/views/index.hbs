@@ -30,9 +30,10 @@
     </header>
      
 
-    <!--<div class="botao" onclick="abrirModal()">Pesquisar</div>-->
+    <!--Expansão da janela modal-->
      </div>
     <div class="janela-modal" id="janela-modal">
+         <!--div do conteudo do modal-->
         <div class="modal" id="modal">
             <button class="fechar" id="fechar">X</button>
            <form action="/search" method="GET" id="form-modal">    
@@ -50,6 +51,7 @@
           <div class="col-auto">
           
             </div>
+             <!--chamada da função que busca e devolve os valores pesquisados na API-->
            {{#if error}}
             <div class="alert alert-danger" role="alert">
       {{error}}
@@ -81,7 +83,7 @@
     {{/if}}
         </div>
 </div>
-
+ <!--conteudo e botão de pesquisar-->
 <div class="previsao-container">
             <div class="interface">
                 <h2 class="titulo"> Veja a previsão <span>Em qualquer lugar!</span></h2>

@@ -1,5 +1,6 @@
 botao_pesquisar = document.getElementById('botao-pesquisar')
 
+/* funçao para expandir modal*/
 function abrirModal(){
     const janelaModal = document.getElementById('janela-modal')
     
