@@ -446,7 +446,7 @@ A experiência da equipe foi muito boa e por isso temos muitos pontos a destacar
 
 * <img src="./src/public/assets/images/descomplicado.png" align="left" height="50px" />  Por fim, e não menos importante, a simplicidade sem perder a qualidade se tornou uma bandeira da equipe, em prol de uma solução eficiente, com custos controlados, factível de ser implementada, fácil para o usuário final e útil para todos.
 
-## Oportunidades de Melhoria)<a name="melhorias"></a>
+## Oportunidades de Melhoria<a name="melhorias"></a>
 
 A equipe desenvolvedora acredita que oportunidades de melhorias sempre existirão, no entanto, no presente processo, ficou demonstrado que a equipe buscou formas de evoluir a solução, seja pelo aspecto da segurança, seja sob o aspecto da continuidade operacional. Toda e qualquer sugestão poderá ser encaminhada para os membros da equipe que desde já agradecem.
 
